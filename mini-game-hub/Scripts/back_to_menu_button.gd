@@ -4,7 +4,7 @@ class_name BackToMenuButton
 # If you prefer a dynamic reference, please copy the code related to
 # variable @export var target_scene: PackedScene in game_button.gd
 const MAIN_MENU_SCENE := "res://Scenes/MainMenu.tscn"
-
+# Test commentaire pour ajout
 func _ready() -> void:
 	pressed.connect(_on_pressed)
 
