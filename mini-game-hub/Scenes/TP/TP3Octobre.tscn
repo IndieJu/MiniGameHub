@@ -2,13 +2,9 @@
 
 [ext_resource type="Script" uid="uid://d11psm6h1ysub" path="res://Scripts/tp_3_octobre.gd" id="1_1qius"]
 [ext_resource type="Script" uid="uid://dr653qaxa3vmr" path="res://Scripts/TP/mouse_input.gd" id="3_0v47b"]
-[ext_resource type="PackedScene" uid="uid://cnw2gnesbgnhi" path="res://Scenes/TP/Vehicle/Vehicle.tscn" id="4_ngp34"]
 
 [node name="Node2D" type="Node2D" unique_id=868576146]
 script = ExtResource("1_1qius")
-
-[node name="VehicleSprite" parent="." unique_id=234709142 instance=ExtResource("4_ngp34")]
-position = Vector2(247, 171)
 
 [node name="MouseInput" type="Node" parent="." unique_id=1983493154]
 script = ExtResource("3_0v47b")

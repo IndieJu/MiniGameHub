@@ -15,4 +15,4 @@ func _process(delta: float) -> void:
 
 func move_vehicle(a_speed: float, a_direction: Vector2, delta: float) -> void:
 	self.position += a_direction.normalized() * a_speed * delta
-	self.rotation = rad_to_deg(a_direction.angle()) - 90
+	self.rotation = a_direction.angle() + PI / 2
