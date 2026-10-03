@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cnw2gnesbgnhi"]
+
+[ext_resource type="Texture2D" uid="uid://ogo7lc587ffu" path="res://Assets/Ships/ship_0001.png" id="1_dljkh"]
+[ext_resource type="Script" uid="uid://22cecvhi0720" path="res://Scripts/vehicle.gd" id="2_4v6jv"]
+
+[node name="VehicleSprite" type="Sprite2D" unique_id=234709142]
+texture = ExtResource("1_dljkh")
+script = ExtResource("2_4v6jv")

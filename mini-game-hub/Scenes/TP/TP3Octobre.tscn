@@ -1,17 +1,10 @@
 [gd_scene format=3 uid="uid://cap3uejm14bvp"]
 
 [ext_resource type="Script" uid="uid://d11psm6h1ysub" path="res://Scripts/tp_3_octobre.gd" id="1_1qius"]
-[ext_resource type="Texture2D" uid="uid://c751ycpe4f75y" path="res://Assets/Ships/ship_0000.png" id="2_0v47b"]
-[ext_resource type="Texture2D" uid="uid://df4rinw0djtq" path="res://Assets/Ships/ship_0002.png" id="3_0v47b"]
+[ext_resource type="PackedScene" uid="uid://cnw2gnesbgnhi" path="res://Scenes/TP/Vehicle/Vehicle.tscn" id="4_ngp34"]
 
 [node name="Node2D" type="Node2D" unique_id=868576146]
 script = ExtResource("1_1qius")
 
-[node name="BlueShip01" type="Sprite2D" parent="." unique_id=247568577]
-position = Vector2(81, 123)
-texture = ExtResource("2_0v47b")
-centered = false
-
-[node name="GreenShip01" type="Sprite2D" parent="." unique_id=1800536857]
-position = Vector2(219, 65)
-texture = ExtResource("3_0v47b")
+[node name="VehicleSprite" parent="." unique_id=234709142 instance=ExtResource("4_ngp34")]
+position = Vector2(247, 171)
