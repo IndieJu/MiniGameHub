@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c8jnjw4os23yc"]
+
+[ext_resource type="Script" uid="uid://v77jepygwmwu" path="res://Scripts/TP/tp_10_octobre.gd" id="1_4hbxw"]
+[ext_resource type="PackedScene" uid="uid://d3bcdf66s5pfe" path="res://Scenes/TP/TP_10Octobre/Ship.tscn" id="2_egymv"]
+
+[node name="Tp10Octobre" type="Node2D" unique_id=1507975298]
+script = ExtResource("1_4hbxw")
+
+[node name="Ship" parent="." unique_id=555140593 instance=ExtResource("2_egymv")]
+position = Vector2(455, 185)
+
+[node name="Marker2D_Cible_01" type="Marker2D" parent="." unique_id=2007750035]
+position = Vector2(454, 258)
+
+[node name="Marker2D_Cible_02" type="Marker2D" parent="." unique_id=560564792]
+position = Vector2(123, 73)

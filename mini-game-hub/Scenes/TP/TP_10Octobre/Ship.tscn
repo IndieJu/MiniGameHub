@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d3bcdf66s5pfe"]
+
+[ext_resource type="Texture2D" uid="uid://o4o43eqhivhv" path="res://Assets/Ships/ship_0003.png" id="1_0aoto"]
+[ext_resource type="Script" uid="uid://dr3vgeyjj7ahe" path="res://Scenes/TP/TP_10Octobre/Scripts/ship.gd" id="2_2gqpo"]
+
+[node name="Ship" type="Sprite2D" unique_id=555140593]
+texture = ExtResource("1_0aoto")
+script = ExtResource("2_2gqpo")
+ship_speed = 55.0

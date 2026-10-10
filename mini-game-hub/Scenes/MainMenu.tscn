@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dud5evupphicd"]
 
 [ext_resource type="PackedScene" path="res://Scenes/UI/GameButton.tscn" id="1"]
-[ext_resource type="PackedScene" uid="uid://bl35nxv6fm4c5" path="res://Scenes/Games/ExampleGame.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://cap3uejm14bvp" path="res://Scenes/TP/TP3Octobre.tscn" id="2_8saeu"]
+[ext_resource type="PackedScene" uid="uid://c8jnjw4os23yc" path="res://Scenes/TP/TP_10Octobre/TP10Octobre.tscn" id="2_ghw46"]
 
 [node name="MainMenu" type="Control" unique_id=1493946622]
 layout_mode = 3
@@ -27,6 +27,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="CenterContainer" unique_id=479049548]
 custom_minimum_size = Vector2(280, 400)
@@ -37,12 +39,15 @@ custom_minimum_size = Vector2(260, 0)
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="ExampleGameButton" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=340290386 instance=ExtResource("1")]
+[node name="Button_TP10oct" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=340290386 instance=ExtResource("1")]
 layout_mode = 2
-text = "Example Game"
-target_scene = ExtResource("2")
+text = "TP 10 Octobre"
+target_scene = ExtResource("2_ghw46")
 
 [node name="Button_TP3oct" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=232579917 instance=ExtResource("1")]
 layout_mode = 2
 text = "TP 3 Octobre"
 target_scene = ExtResource("2_8saeu")
+
+[node name="GameButton" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=1125820942 instance=ExtResource("1")]
+layout_mode = 2
