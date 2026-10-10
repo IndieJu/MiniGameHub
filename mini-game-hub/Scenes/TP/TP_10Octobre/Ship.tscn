@@ -6,4 +6,3 @@
 [node name="Ship" type="Sprite2D" unique_id=555140593]
 texture = ExtResource("1_0aoto")
 script = ExtResource("2_2gqpo")
-ship_speed = 55.0
